@@ -13,7 +13,7 @@ function Weather(props) {
         city: response.data.city,
         date: new Date(response.data.time * 1000),
         description: response.data.condition.description,
-        icon: response.data.condition.icon_url,
+        icon: response.data.condition.icon,
         iconName: response.data.condition.icon,
         temperature: response.data.temperature.current,
         wind: response.data.wind.speed,
