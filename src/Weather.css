@@ -1,6 +1,5 @@
 .Weather {
     border: 1px solid #dadde1;
-    color: rgb(135,135,135);
     padding: 16px;
     margin: 30px auto;
     max-width: 600px;
@@ -36,8 +35,6 @@
 
 .Weather canvas {
     margin-right: 10px;
-    height: 52px;
-    width: 52px;
 }
 
 .Weather .unit {
