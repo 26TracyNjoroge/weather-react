@@ -31,10 +31,10 @@
     color: rgb(33,33,33);
     font-size: 4rem;
     line-height: 64px;
+    margin-left: 8px;
 }
 
 .Weather canvas {
-    margin-right: 10px;
 }
 
 .Weather .unit {
