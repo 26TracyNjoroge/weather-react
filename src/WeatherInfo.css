@@ -1,0 +1,13 @@
+.WeatherInfo .WeatherInfo-icon {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.WeatherInfo .WeatherInfo-description {
+  margin-top: 47px;
+  margin-right: 60px;
+}
+
+.WeatherInfo .WeatherInfo-temp {
+    margin-bottom: 18px;
+  }

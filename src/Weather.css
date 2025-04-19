@@ -4,7 +4,7 @@
     margin: 30px auto;
     max-width: 600px;
     font-family: Arial, sans-serif;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .Weather h1 {
@@ -14,39 +14,30 @@
     margin: 20px 0 6px 0;
 }
 
-.Weather ul{
-    padding: 0;
-    margin: 0;
-}
-
-.Weather li {
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 19px;
-    list-style: none;
-}
-
 .Weather .temperature {
-    font-weight: 570;
-    color: rgb(33,33,33);
-    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    font-size: 5.4rem;
     line-height: 64px;
-    margin-left: 8px;
 }
-
-/* .Weather canvas {
-    height: 40px;
-    width: 40px;
-    margin-top: 10px;
-} */
 
 .Weather .unit {
-    color: rgb(33, 33,33);
-    font-size: 1rem;
+    color:white;
+    font-size: 1.6rem;
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -32px;
+    top: -42px;
     margin-left: 5px;
 } 
+
+.Weather .search-button {
+    background-color: #354426;
+    color: white;
+    transition: 150ms;
+}
+
+.Weather .search-button:hover {
+    background-color: #5c7a3b;
+}
 

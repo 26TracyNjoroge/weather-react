@@ -2,29 +2,30 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "./WeatherInfo.css";
 
 function WeatherInfo(props) {
     return (
-        <div>
-            <h1>{props.data.city}</h1>
-                <ul>
-                    <li><FormattedDate date={props.data.date}/></li>
-                    <li className="text-capitalize">{props.data.description}</li>
-                </ul>
-                <div className="row mt-3">
-                    <div className="col-6">
-                        <div className="d-flex">
-                                <WeatherIcon code={props.data.icon} alt={props.data.iconName} size={54}/>
-                                <WeatherTemperature celsius={props.data.temperature} />
+        <div className="WeatherInfo">
+            <div className="row">
+                <div className="d-flex justify-content-between">
+                    <div>
+                        <h1>{props.data.city}</h1>
+                        <FormattedDate date={props.data.date}/>
+                        <div className="WeatherInfo-icon">
+                            <WeatherIcon code={props.data.icon} alt={props.data.iconName} size={62}/>
+                            <div className="text-capitalize">{props.data.description}</div>
                         </div>
                     </div>
-                    <div className="col-6">
-                        <ul>
-                            <li>Wind: {props.data.wind}%</li>
-                            <li>Humidity: {props.data.humidity}km/hr</li>
-                        </ul>
+                    <div className="WeatherInfo-description">
+                        <div className="WeatherInfo-temp">
+                            <WeatherTemperature celsius={props.data.temperature} />
+                        </div>
+                        <div>Wind: {props.data.wind}%</div>
+                        <div>Humidity: {props.data.humidity}km/hr</div>
                     </div>
                 </div>
+            </div>
         </div>
     )
 }
