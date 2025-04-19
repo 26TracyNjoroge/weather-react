@@ -34,8 +34,11 @@
     margin-left: 8px;
 }
 
-.Weather canvas {
-}
+/* .Weather canvas {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+} */
 
 .Weather .unit {
     color: rgb(33, 33,33);
